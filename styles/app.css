@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 .container {
-  max-width: 1170px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px; }
@@ -23,40 +23,40 @@
   width: 100%; }
 
 .ba-col-1 {
-  width: 8.33333; }
+  width: 8.33333%; }
 
 .ba-col-2 {
-  width: 16.66667; }
+  width: 16.66667%; }
 
 .ba-col-3 {
-  width: 25; }
+  width: 25%; }
 
 .ba-col-4 {
-  width: 33.33333; }
+  width: 33.33333%; }
 
 .ba-col-5 {
-  width: 41.66667; }
+  width: 41.66667%; }
 
 .ba-col-6 {
-  width: 50; }
+  width: 50%; }
 
 .ba-col-7 {
-  width: 58.33333; }
+  width: 58.33333%; }
 
 .ba-col-8 {
-  width: 66.66667; }
+  width: 66.66667%; }
 
 .ba-col-9 {
-  width: 75; }
+  width: 75%; }
 
 .ba-col-10 {
-  width: 83.33333; }
+  width: 83.33333%; }
 
 .ba-col-11 {
-  width: 91.66667; }
+  width: 91.66667%; }
 
 .ba-col-12 {
-  width: 100; }
+  width: 100%; }
 
 /*ba-common*/
 .ba-text-center {
@@ -72,11 +72,159 @@
   text-align: justify; }
 
 /* style.scss*/
-.ba-menu {
-  display: flex;
-  align-items: center;
-  list-style: none; }
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase; }
 
-.ba-menu__link {
+a {
   color: inherit;
   text-decoration: none; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Raleway', sans-serif; }
+
+.ba-banner {
+  height: 100vh; }
+
+.ba-hero {
+  height: calc(100vh - 85px);
+  background-image: url(../images/hearo.jpeg);
+  background-size: cover;
+  background-color: #000;
+  padding: 9vh 0 7.5vh;
+  color: #ffffff; }
+  .ba-hero__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .ba-hero__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .ba-hero__middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right; }
+  .ba-hero__bottom {
+    text-align: center; }
+  .ba-hero__scroll {
+    display: inline-block;
+    height: 67px;
+    width: 45px;
+    background-image: url(../images/mouse-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .ba-hero__title {
+    /* Style for "Welcome to" */
+    color: #ededed;
+    font-size: 48px;
+    font-weight: 800;
+    /* Text style for "Welcome to" */
+    letter-spacing: 6px; }
+  .ba-hero__text {
+    /* Style for "Your free" */
+    color: #ededed;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 3px; }
+
+.ba-logo {
+  /* Style for "wheels" */
+  color: #ededed;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  /* Text style for "w, heels" */
+  letter-spacing: 3.75px; }
+
+.ba-menu-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  /* Style for "menu" */
+  color: #ededed;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* Text style for "m, enu" */
+  letter-spacing: 3.58px; }
+  .ba-menu-btn__lines {
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    z-index: 10; }
+  .ba-menu-btn__line {
+    display: block;
+    height: 2px;
+    background-color: #ededed; }
+  .ba-menu-btn__line:nth-child(2) {
+    margin: 6px 0; }
+  .ba-menu-btn__line:nth-child(3) {
+    margin: 6px 0; }
+
+.ba-header {
+  padding: 2vh 0; }
+  .ba-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.ba-logo_black {
+  color: #1c1c1c; }
+
+.ba-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; }
+  .ba-menu__item + .ba-menu__item {
+    margin-left: 50px; }
+  .ba-menu__link {
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.25px; }
+
+.ba-section {
+  text-align: center; }
+  .ba-section__title {
+    /* Style for "about us" */
+    color: #1d1d1d;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3.75px; }
+  .ba-section__desc {
+    color: #3b3b3b;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2.25px;
+    letter-spacing: 2.25px; }
+
+.ba-text p {
+  text-align: justify;
+  margin: 10px 50px;
+  color: #3b3b3b;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.75px; }
+
+.ba-product {
+  text-align: center; }
+  .ba-product__thumb {
+    padding: 0 1em; }
+  .ba-product__img {
+    max-width: 100%; }
