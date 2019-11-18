@@ -10,6 +10,7 @@ a {
 }
 
 ul {
+    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -170,11 +171,17 @@ body {
         letter-spacing: 2.25px;
     }
 }
+//======= ba-about =======//
+.ba-about {
+    padding-top: 52px;
+    padding-bottom: 66px;
+}
 
 .ba-section {
     text-align: center;
 
     &__title {
+        margin: 0;
         /* Style for "about us" */
         color: #1d1d1d;
         font-size: 30px;
@@ -182,26 +189,83 @@ body {
         text-transform: uppercase;
         letter-spacing: 3.75px;
     }
+    
+    &__title_white {
+        color: white;
+    }
 
     &__desc {
+        margin: 1rem auto;
         color: #3b3b3b;
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 2.25px;
-        letter-spacing: 2.25px;
+    }
+
+    &__desc_white {
+        color: white;
     }
 }
 
 .ba-text p {
     text-align: justify;
-    margin: 10px 50px;
+    margin: 0;
+    margin-top: 1.25rem;
     color: #3b3b3b;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1.75px;
 }
+//======= ba-statistic =======//
+.ba-statistic {
+    background: {
+        image: url(../images/about-bg.jpeg);
+        size: cover;
+        color:#000;
+    }
+    padding-top: 94px;
+    padding-bottom: 104px;
+}
+
+.ba-statistic-list {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.ba-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+
+    /*&__item + &__item {
+        margin-left: 200px;
+    }*/
+
+    &__head {
+        margin: 0;
+        color: #ededed;
+        font-size: 72px;
+        font-weight: 600;
+        letter-spacing: 9px;
+    }
+
+    &__text {
+        margin: 0;
+        color: #ededed;
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
 
 //======= ba-product =======//
+.ba-products {
+    padding-top: 51px;
+    padding-bottom: 76px;
+}
 
 .ba-product {
     text-align: center;
@@ -213,4 +277,31 @@ body {
     &__img {
         max-width: 100%;
     }
+
+    &__title {
+        margin: 0;
+        color: #3b3b3b;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 3px;  
+    }
+
+    &__price {
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 3.75px;
+    }
+
+    &__link {
+        display: block;
+        margin-top: 0.8rem;
+        color: #3b3b3b;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: underline;
+        letter-spacing: 2.25px;
+    }
 }
+
+//======= ba-team =======//
+
