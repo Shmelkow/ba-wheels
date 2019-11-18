@@ -133,7 +133,11 @@ body {
 
 .ba-section {
   text-align: center; }
-  .ba-section__title {
+  .ba-section-header {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center; }
+  .ba-section__title, .ba-team-member__name {
     margin: 0;
     /* Style for "about us" */
     color: #1d1d1d;
@@ -170,8 +174,7 @@ body {
 
 .ba-statistic-list {
   max-width: 900px;
-  margin: 0 auto;
-  margin-top: 80px; }
+  margin: 0 auto; }
 
 .ba-list {
   display: flex;
@@ -222,3 +225,39 @@ body {
     font-weight: 600;
     text-decoration: underline;
     letter-spacing: 2.25px; }
+
+.ba-team {
+  padding-top: 50px;
+  background-color: #ededed; }
+  .ba-team-member {
+    text-align: center; }
+    .ba-team-member__thumb {
+      width: 216px;
+      height: 216px;
+      overflow: hidden;
+      margin: 0 auto;
+      border-radius: 50%; }
+    .ba-team-member__img {
+      border-radius: 50%;
+      transition: transform .3s; }
+      .ba-team-member__img:hover {
+        transform: scale(1.2); }
+
+.ba-showcase {
+  padding-top: 66px;
+  padding-bottom: 57px; }
+  .ba-showcase-list {
+    display: flex;
+    justify-content: center; }
+  .ba-showcase-account__img {
+    max-width: 100%; }
+  .ba-showcase-footer {
+    margin-top: 66px; }
+    .ba-showcase-footer__link {
+      text-decoration: underline; }
+
+.ba-footer-list {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
