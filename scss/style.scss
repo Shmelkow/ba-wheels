@@ -368,14 +368,52 @@ body {
 //======= ba-footer =======//
 
 .ba-footer {
+    background-color: #1e1e1e;
+    padding-top: 57px;
+    padding-bottom: 78px;
     
     &-list{
         margin: 0 auto;
+        margin-top: 138px;;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-around;
+        align-items: flex-start;
     }
     
+    &__title {
+        margin: 0;
+        margin-bottom: 1.65em;
+        color: #ededed;
+        font-size: 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2.25px;
+    }
+
+    &-menu_logos {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__link {
+        display: block;
+        margin-bottom: 1em;
+        color: #ededed;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2.25px;
+    }
+
+    &__logo {
+        margin-right: 10px;
+    }
+
+    &-map{
+        &__img {
+            max-width: 100%;
+        }
+    }
 
 }
 
